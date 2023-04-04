@@ -6,22 +6,22 @@ import java.time.LocalDateTime;
 
 public class ErrorDetails {
     // Timestamp, message, details
-    private LocalDateTime Timestamp;
-    private String mesage;
+    private LocalDateTime timeStamp;
+    private String message;
     private String details;
 
-    public ErrorDetails(LocalDateTime timestamp, String mesage, String details) {
-        Timestamp = timestamp;
-        this.mesage = mesage;
+    public ErrorDetails(LocalDateTime timestamp, String message, String details) {
+        this.timeStamp = timestamp;
+        this.message = message;
         this.details = details;
     }
 
     public LocalDateTime getTimestamp() {
-        return Timestamp;
+        return timeStamp;
     }
 
-    public String getMesage() {
-        return mesage;
+    public String getMessage() {
+        return message;
     }
 
     public String getDetails() {
